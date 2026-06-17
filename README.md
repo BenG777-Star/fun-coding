@@ -40,3 +40,26 @@ JS variables are containers that store data, which can be created using `let`,`c
 I've also learnt that naming styles like camelCase, PascalCase and snake_case are used differently  depending on what  you're naming and which language you're working in.
 
 
+## Variables
+Primitives are simple values stored directly in the variable, as opposed to objects/arrays which store a reference to a location in memory.
+
+### Creating String Variables
+let name1 = "Benjamin";//double quotes
+let name2 = 'Benjamin';//single quotes
+let name3 = `Benjamin`;//template literal (backticks)
+ 
+ double and single quotes work the same way, but template literals (backticks) let you embed variables directly inside the string using ${}, e.g. `Hello, $ {name1}`.
+
+ ### Undefined vs Null
+ Undefined means a variable has been deaclared but has not been assigned a value yet - JavaScript seta this automatically.
+
+ Null means `intentionally empty` - you assign this yourself when you want to clear a variable or show there is no value on purpose.
+  ##### Examples:
+  let a;//undefined (JS engine sets this automatically)
+  console.log(a);//undefined
+
+  let b = null;//you explicitly set this
+  console.log(b);//null
+
+  Best practice: never explicitly set a variable to undefined yourself. If you want to represent "no value," use null instead.
+  
