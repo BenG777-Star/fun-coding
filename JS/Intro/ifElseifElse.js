@@ -5,7 +5,7 @@ lets start with if:
  *you can use it on its own
 */
 
-let age=("Enter your age:")
+let age= prompt("Enter your age:")
 alert(`You entered $(age)`)
 
 //age27
